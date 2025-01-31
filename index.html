@@ -16,6 +16,11 @@
             max-width: 100%; /* Make images responsive */
             height: auto; /* Maintain aspect ratio */
         }
+        .card-body {
+            background-color: white; /* Set card background to white for contrast */
+            border-radius: 5px; /* Add rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        }
     </style>
 </head>
 <body>
@@ -44,15 +49,19 @@
     <h1>I'm Jeybi</h1>
     <p>Welcome to my personal website!</p>
     
-    <div class="image-container">
-        <img src="photos/love.jpg" alt="Description of image 1">
-        <img src="photos/hobbies.jpg" alt="Description of image 2">
-
+    <div class="row image-container">
+        <div class="col-md-6">
+            <img src="photos/love.jpg" alt="Description of image 1" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src="photos/hobbies.jpg" alt="Description of image 2" class="img-fluid">
+        </div>
     </div>
-    <div class="card-body p-5">
+    
+    <div class="card-body p-5 mt-4">
         <p>I'm Jayson Bryan but you can call me Jeybi and I am taking Computer Science in EAC - Cavite.</p>
         <p>I chose this course because I thought that as technology develops, it is one of the courses that can keep up with the passage of time.</p>
-        <p></p>
+    </div>
 </div>
  
 <footer class="bg-light text-center py-3">
