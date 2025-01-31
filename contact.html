@@ -6,6 +6,23 @@
     <title>Contact - My Bootstrap Site</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            background-color: lightcyan; /* Set background color to light cyan */
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .card-body {
+            background-color: white; /* Set card background to white for contrast */
+            border-radius: 5px; /* Add rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        }
+    </style>
 </head>
 <body>
  
@@ -20,7 +37,7 @@
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.html">HobbiesS</a>
+                <a class="nav-link" href="about.html">Hobbies</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="contact.html">What I like to do</a>
@@ -33,16 +50,20 @@
     <h1>What I like to do</h1>
     <p>This is the things that I like doing.</p>
     <p>I like to visit some historical places like Intramuros and also I like to go in museums with my girl.</p>
-</div>
-        <div class="image-container">
-        <img src="photos/museum.jpg" alt="Description of image 1">
-        <img src="photos/intramuros.jpg" alt="Description of image 2">
-
+    
+    <div class="row image-container">
+        <div class="col-md-6">
+            <img src="photos/museum.jpg" alt="Museum" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <img src="photos/intramuros.jpg" alt="Intramuros" class="img-fluid">
+        </div>
     </div>
+</div>
  
 <footer class="bg-light text-center py-3">
     <p>&copy; 2025 Emilio Aguinaldo College - Cavite</p>
 </footer>
 
 </body>
-</html>	
+</html>
